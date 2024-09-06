@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Bootstrap demo</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor' crossorigin='anonymous'>
+
+
+
+    <style>
+        * {{
+
+            list-style: none;
+            
+
+        }}
+
+        .cedula {{
+
+            border-radius: 20px;
+            position: relative;
+            top: 10px;
+            margin: auto;
+            background-color: rgb(255, 204, 175);
+            width: 60%;
+            height: auto;
+            
+background: rgb(255,226,193);
+background: linear-gradient(47deg, rgba(255,226,193,1) 0%, rgba(255,181,106,1) 100%);
+
+        }}
+        .arriba{{
+               display: flex;
+        }}
+
+        .arriba img {{
+            z-index: 1000;
+            position: absolute;
+            top: 10px;
+
+
+        }}
+
+        .arriba h1 {{
+            font-size: 40px;
+
+
+
+            text-align: center;
+        }}
+
+        .arriba h2 {{
+            font-size: 30px;
+
+
+
+            text-align: center;
+        }}
+
+        .arriba h4 {{
+            font-size: 20px;
+
+
+
+            text-align: center;
+        }}
+
+
+
+
+        .arriba img {{
+            margin: 10px;
+            width: 100px;
+
+        }}
+
+
+        .medio .img {{
+            display: flexbox;
+            align-items: center;
+            justify-items: center;
+        }}
+
+        .medio img {{
+            margin: auto;
+            width: 100%;
+
+
+        }}
+
+        .lll {{
+            display: flex;
+            justify-content: space-between;
+        }}
+
+        .lll * {{
+            display: flexbox;
+            justify-content: space-between;
+        }}
+
+        .abajo h1 {{
+            font-size: 60px;
+        }}
+
+        .abajo h3 {{
+            font-size: 35px;
+        }}
+        .la_cedula{{
+            margin: auto;
+            margin-bottom:50px ;
+
+            left: 35%;
+            line-height: 20px;
+             word-wrap: break-word;
+
+
+            text-align: center;
+            font-size: 60px;
+        }}
+    </style>
+</head>
+
+
+<body>
+    <div class='cedula container-fluid'>
+        <div class='row arriba flex-container'>
+            <div><img
+                    src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Coat_of_arms_of_the_Dominican_Republic.svg/270px-Coat_of_arms_of_the_Dominican_Republic.svg.png'
+                    alt=''></div>
+
+
+            <ul>
+                <li>
+                    <h1>Republica dominicana</h1>
+                </li>
+                <li>
+                    <h2>junta centrar electoral</h2>
+                </li>
+                <li>
+                    <h4>cedula de identidad y electoral</h4>
+                </li>
+            </ul>
+
+
+        </div>
+        <div class='row medio container-fluid'>
+
+            <div>
+                <h1 class='la_cedula'>{cedula}</h1>
+            </div>
+            <div class='row img'>
+                <div class='col-3'>
+                    <img src='{img}' alt=''>
+                </div>
+                <div class='col-9'>
+                    <table>
+                        <tr>
+                            <h2> <strong>lugar de nacimiento</strong> </h2>
+                        </tr>
+                        <tr>
+                            <h5>{lugar}</h5>
+                        </tr>
+                        <tr>
+                            <h2> <strong>fecha de nacimiento</strong></h2>
+                        </tr>
+                        <tr>
+                            <h5>{nacimiento}</h5>
+                        </tr>
+                        <tr class='lll container-fluid'>
+                            <div class='row'>
+                                <ul class='col-6 container-fluid'>
+                                    <div class='row'>
+                                        <li class='col-6'>
+                                            <h3> <strong>sexo</strong> </h3>
+                                        </li>
+                                        <li class='col-6'>
+                                            <h2> {sexo}</h2>
+                                        </li>
+                                    </div>
+
+                                </ul>
+                                <ul class='col-6 display'>
+                            <div class='row'>
+                                <li class='col-8'>
+                                    <h3> <strong>estado civil</strong> </h3>
+                                </li>
+                                <li class='col-4'>
+                                    <h2> {estadoCivil}</h2>
+                                </li>
+                            </div>
+                                </ul>
+                            </div>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+        <div class='row abajo m-2'>
+            <ul>
+                <li>
+                    <h1>{nombre}</h1>
+                </li>
+                <li>
+                    <h3>{apellido1} {apellido2}</h3>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2'
+        crossorigin='anonymous'></script>
+</body>
+
+</html>
